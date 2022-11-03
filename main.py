@@ -1,66 +1,164 @@
-# a = 5
-# print(a)
-# b = 99
-# print(b + a)
+# class Human:
+#     heigth = 170
+#     setiety = 10
 
-# class Girl:
-#     spiceis = "bird"
+# class Student(Human):
+#     setiety = 10
 
-    #
-    # def __init__(self, name, age):
-    #     self.name = name
-    #     self.age = age
-    #     self.color = 'black'
-    #
-    # def grow(self, heigth=1):
-    #     self.heingth = heigth
+# class Worker(Human):
+#     pass
+#
+# nick = Student()
+# anna = Worker()
+# print(nick.setiety)
+# print(anna.setiety)
+
+# class Grandparen:
+#     heigth = 170
+#     gladness = 100
+#     age = 60
+#
+# class Parent(Grandparen):
+#     age = 40
+
+# class Child(Parent):
+#     heigth = 50
+#     def __init__(self):
+#         print(self.heigth)
+#         print(self.gladness)
+#         print(self.age)
+#
+# nick = Child()
+
+# class Class1:
+#     var = 20
+#     def __init__(self):
+#         self.var = 10
 
 
-# kate = Girl (heigth=170)
-# kate.grow(heigth=15)
-# print(kate.heigth)
+# class Class2(Class1):
+#     def __init__(self):
+#         print(self.var)
+#         super().__init__()
+#         print(self.var)
+#
+# hello_world = Class2
+
+# class Grandparent:
+#     def about(self):
+#         print('I am GrandParent')
+#     def about_muself(self)):
+#         print('I am GramdParent'
+
+# try:
+#     print('Start code')
+#     print(10/0)
+#     print('No errors')
+# except ZeroDivisionError:
+#     print('error!because hare is division zero')
+# except NameError:
+#     print("We have an error")
+#
+# print('code after capsul')
+#
+# def checker(var_1):
+#     if type(var_1)!= str:
+#         raise TypeError(f'Sorry, we cant work with {type(var_1)}')
+
+# class Grandparent:
+#
+#     def about(self):
+#         print("I am GrandParent")
+#
+#     def about_myself(self):
+#         print("I am Grandparent")
+#
+#
+# class Parent(Grandparent):
+#
+#     def about_myself(self):
+#         print("I am Parent")
+#
+#
+# class Child(Parent):
+#
+#     def __init__(self):
+#         super().about()
+#
+#         super().about_myself()
+#
+#
+# nick = Child()
+
+# class BuildingEror(Exception):
+#
+#     def __str__(self):
+#
+#         return f"With so much material the house cannot be built!"
+#
+#
+#
+# def check_material(amount_of_material,limit_value):
+#
+#     if amount_of_material > limit_value:
+#
+#         return "enough material"
+#
+#     else:
+#
+#         raise BuildingEror(amount_of_material)
+#
+#
+#
+# # materials = 123
+#
+# check_material(123, 300)
 
 
-# blu = Girl('nick', 10)
-# woo = Girl('woo', 15)
-# print(woo.color)
-# print(woo.age)
 
-class Student:
+class BuildingEror(Exception):
 
-    def __init__(self, name):
-        self.name = name
-        self.progress = 0
-        self.gladnass = 50
-        self.alive = True
+    def __str__(self):
 
-    def to_study(self):
-        print('Time to study')
-        self.progress += 0.5
-        self.gladnass += 2
-        pass
+        return f"With so much material the house cannot be built!"
 
-    def to_sleep(self):
-        print('Time to study')
-        self.gladnass += 5
-        pass
 
-    def to_chill(self):
-        print('rest time')
-        self.gladnass += 7
-        self.progress += 0.2
-        pass
 
-    def is_aleve(self):
-        if self.progress < -0.5:
-            self.alive = False
+def check_material(amount_of_material,limit_value):
 
-        elif self.gladnass <= 0:
-            print('Depresion')
-            self.alive = False
+    if amount_of_material > limit_value:
 
-    def end_of_day(self):
-        print(f'Gladness = {self.gladnass}')
-        print(f'Progres = {self.progress}')
+        return "enough material"
+
+    else:
+
+        raise BuildingEror(amount_of_material)
+
+
+
+# materials = 123
+
+check_material(123, 300)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
